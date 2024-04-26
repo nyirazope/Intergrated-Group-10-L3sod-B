@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.booklet {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.page {
+  width: 210mm; /* A4 size */
+  height: 297mm;
+  margin: 5mm; /* Margins to simulate binding */
+  padding: 10mm;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.page1 {
+  page-break-after: always; /* Force page break after this page */
+}
+
+.page h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.page p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+</style>
+  <title>Booklet</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="booklet">
+    <div class="page page1">
+      <h1>Page 1</h1>
+      <p>This is content for page 1</p>
+    </div>
+    <div class="page page2">
+      <h1>Page 2</h1>
+      <p>This is content for page 2</p>
+    </div>
+    <!-- Add more pages as needed -->
+  </div>
+</body>
+</html>
